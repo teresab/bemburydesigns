@@ -1,0 +1,1 @@
+I am learning the basics of Git and Git hub using my old html site. This is a readme 
