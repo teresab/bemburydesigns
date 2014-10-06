@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Teresa Bembury Portfolio</title>
+</style>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="includes/jquery-1.4.2.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<style type="text/css">
+#apDiv1 {
+	position:relative;
+	width:658px;
+	height:209px;
+	z-index:1;
+	left: 277px;
+	top: 78px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: x-small;
+	color: #333;
+}
+#myinfo {
+	position: relative;
+	top: 70px;
+}
+.bottomlinetwo {
+	position: relative;
+	top: 300px;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('newnav/home2.jpg','newnav/aboutme2.jpg','newnav/contact2.jpg','newnav/blankbarp.jpg','newnav/portfolio2.jpg')">
+
+
+<div class="navbar"><a href="index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','newnav/home2.jpg',1)"><img src="newnav/homebar1.jpg" alt="home" name="home" width="81" height="40" border="0" id="home" /></a><a href="aboutus.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('aboutme','','newnav/aboutme2.jpg',1)"><img src="newnav/aboutme1.jpg" alt="aboutme" name="aboutme" width="93" height="40" border="0" id="aboutme" /></a><a href="contact.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','newnav/contact2.jpg',1)"><img src="newnav/contact1.jpg" alt="contact" name="contact" width="96" height="40" border="0" id="contact" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('blank','','newnav/blankbarp.jpg',1)"><img src="newnav/blankbarp.jpg" alt="blank" name="blank" width="494" height="40" border="0" id="blank" /></a><a href="portfolio.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('portfolio','','newnav/portfolio2.jpg',1)"><img src="newnav/portfolio1.jpg" alt="Portfolio" name="portfolio" width="87" height="40" border="0" id="portfolio" /></a></div>
+
+<div id="myinfo">
+<h1>Contact Information</h1>
+</h2>Teresa Bembury</h2><br />
+<p>Located: Tri-State New York/ New Jersey<br />
+Telephone: 1-732-822-0225<br />
+Skype: Tbembury<br />
+Email: teresa.bembury@gmail.com<br /><p>
+
+<form action="sendresults.php" method="post">
+  <p>Do you have a question, send an email: <br />
+    <br />
+    Full Name: 
+  <input name="Name" type="text" value="" maxlength="70" /> 
+    Email: 
+  <input name="Email" type="text" maxlength="70" />
+  </p>
+  <p>
+    <textarea name="Question or Comment" cols="75" rows="5"></textarea>
+  </p><input name="submit" type="submit" value="submit" />
+  <input type="reset" name="button" id="button" value="reset" />
+</form></div>
+
+<div class="bottomlinetwo"> <div style="background-color:#FFF;"> </div> <br />
+<p><a href="index.htm">HOME</a> | <a href="aboutus.htm">ABOUT ME |</a> <a href="contact.htm">CONTACT |</a></p>
+</div>
+</body>
+</html>
